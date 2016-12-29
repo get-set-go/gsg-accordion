@@ -20,12 +20,9 @@ export default class GSGAccordionSession extends React.Component {
     const { _item, _bStyle } = this.props;
 
     let _bClass = {
-      'panel': true
-    };
-
-    _bClass = objectAssign(_bClass, {
+      'panel': true,
       [`panel-${_bStyle}`]: true
-    });
+    };
 
     _bClass = classNames(_bClass);
 
